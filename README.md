@@ -15,8 +15,8 @@
 - *Machine Learning Models*: PyTorch (CycleGAN), COCO segmentation  
 - *Database*: N/A (File-based storage)  
 
-  📂 *Project Structure*  
-
+  📂 *Project Structure
+`
 ├── backend/                    # Flask Backend
 │   ├── app.py                   # Main Flask app
 │   ├── cloud_removal.py         # Cloud Removal Model
