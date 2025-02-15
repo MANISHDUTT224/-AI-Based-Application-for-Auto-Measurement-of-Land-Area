@@ -16,7 +16,7 @@
 - *Database*: N/A (File-based storage)  
 
   📂 *Project Structure*  
-
+```
 ├── backend/                    # Flask Backend
 │   ├── app.py                   # Main Flask app
 │   ├── cloud_removal.py         # Cloud Removal Model
@@ -35,7 +35,7 @@
 ├── .gitignore                   # Ignored Files
 ├── requirements.txt             # Python Dependencies
 ├── README.md                    # Project Documentation
-
+```
 🚀 *Installation & Setup*  
 
 *1. Clone the Repository*
