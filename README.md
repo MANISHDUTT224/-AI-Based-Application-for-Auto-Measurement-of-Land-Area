@@ -40,8 +40,8 @@
 
 *1. Clone the Repository*
 bash
-git clone https://github.com/your-username/your-repo.git
-cd your-repo
+git clone https://github.com/KABILESH77/-AI-Based-Application-for-Auto-Measurement-of-Land-Area
+cd -AI-Based-Application-for-Auto-Measurement-of-Land-Area
 
 
 🔹 *2. Install Dependencies*  
@@ -92,5 +92,5 @@ npm start
 ---
 
 ## 🙌 *Contributors*  
-👤 *[Your Name]* - Developer  
-🔗 *GitHub*: [your-username](https://github.com/your-username)
+👤 *Kabilesh Kumar* - Developer  
+🔗 *GitHub*: [kabilesh77](-AI-Based-Application-for-Auto-Measurement-of-Land-Area)
