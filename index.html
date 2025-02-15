@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Satellite Image Processing</title>
+    <script src="{{ url_for('static', filename='scripts.js') }}" defer></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        h1 {
+            color: #3e8e41;
+            margin-bottom: 30px;
+        }
+
+        .upload-section {
+            background-color: #ffffff;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: center;
+        }
+
+        .upload-section h2 {
+            font-size: 20px;
+            color: #3e8e41;
+            margin-bottom: 15px;
+        }
+
+        input[type="file"] {
+            display: none;
+        }
+
+        label {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+
+        button {
+            background-color: #008CBA;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin-top: 10px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+            width: 100%;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #005f73;
+        }
+
+        .result {
+            margin-top: 20px;
+        }
+
+        .output-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 4px;
+        }
+
+        .upload-section img {
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Satellite Image Processing</h1>
+
+    <!-- Cloud Removal Section -->
+    <div class="upload-section">
+        <h2>Remove Clouds from Satellite Image</h2>
+        <label for="cloudUpload">Choose Image</label>
+        <input type="file" id="cloudUpload">
+        <button id="cloudUploadBtn">Remove Clouds</button>
+        <div class="result">
+            <h3>Cloud-Free Image</h3>
+            <img id="cloudResult" class="output-image" style="display: none;">
+        </div>
+    </div>
+
+    <!-- Land Segmentation Section -->
+    <div class="upload-section">
+        <h2>Analyze Land Segmentation</h2>
+        <label for="segmentUpload">Choose Image</label>
+        <input type="file" id="segmentUpload">
+        <button id="segmentUploadBtn">Analyze Image</button>
+        <div class="result">
+            <h3>Segmented Image</h3>
+            <img id="segmentResult" class="output-image" style="display: none;">
+        </div>
+    </div>
+
+</body>
+</html>
